@@ -1,11 +1,11 @@
-<script>
-  import { goto } from '$app/navigation';
-  
+<script lang="ts">
+  import { goto } from "$app/navigation";
+
   export let item;
-  
-  function navigateToDetail(id) {
+
+  function navigateToDetail(id: string | number) {
     // TODO: Implement navigation
-    // goto(`/items/${id}`);
+    goto(`/items/${id}`);
   }
 </script>
 
@@ -24,17 +24,17 @@
     border-radius: 8px;
     padding: 20px;
   }
-  
+
   h2 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
-  
+
   p {
     color: #666;
     margin-bottom: 1rem;
   }
-  
+
   .view-details {
     background: none;
     border: none;
@@ -43,7 +43,7 @@
     padding: 0;
     font-size: 1rem;
   }
-  
+
   .view-details:hover {
     text-decoration: underline;
   }
